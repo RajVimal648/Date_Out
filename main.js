@@ -3,14 +3,9 @@ const question = document.querySelector(".question");
 const gif = document.querySelector(".gif");
 const yesBtn = document.querySelector(".yes-btn");
 const noBtn = document.querySelector(".no-btn");
-
-yesBtn.addEventListener("click", () => {
-  question.innerHTML = "Yay, see you on the tomorrow!";
-  gif.src ="second.gif";
-
   yesBtn.addEventListener("click", () =>{
     question.innerHTML = "Thank You!";
-    gif.src ="third.gif";
+    gif.src ="second.gif";
   });
 
 });
@@ -26,4 +21,5 @@ noBtn.addEventListener("mouseover", () => {
   noBtn.style.left = randomX + "px";
   noBtn.style.top = randomY + "px";
 });
+
 
